@@ -1,0 +1,81 @@
+﻿@model PaginatedList<ResponseVM>
+@{
+    ViewData["Title"] = "Get All Page";
+}
+
+
+@if (Model != null && Model.Count > 1)
+{
+    @if (Model.TotalPages > 1)
+    {
+        <div style="margin-top:20px;">
+            <span style="margin-right: 0.5em;">Axtarış nəticəsi: @Model.AllDataCount</span>
+            <span style="margin-right: 0.5em;">Səhifə: @Model.PageIndex / @Model.TotalPages</span>
+            <ul class="pagination" style="vertical-align:middle;">
+                @if (Model.PageIndex > 1)
+                {
+                    <li><a href="@Url.Action("GetAll", new { page = 1 })" title="İlk səhifə"><i class="fa fa-angle-double-left"></i></a></li>
+                    <li><a href="@Url.Action("GetAll", new { page = Model.PageIndex - 1 })" title="Əvvəlki səhifə"><i class="fa fa-angle-left"></i></a></li>
+                }
+                else
+                {
+                    <li class="disabled"><a href="@Url.Action("GetAll", new { page = 1 })" title="İlk səhifə"><i class="fa fa-angle-double-left"></i></a></li>
+                    <li class="disabled"><a href="@Url.Action("GetAll", new { page = Model.PageIndex })" title="Əvvəlki səhifə"><i class="fa fa-angle-left"></i></a></li>
+                }
+                @for (int i = Model.FirstPageToShow; i <= Model.LastPageToShow; i++)
+                {
+                    if (i != Model.PageIndex)
+                    {
+                        <li><a href="@Url.Action("GetAll", new { page = i })">@i</a></li>
+                    }
+                    else
+                    {
+                        <li class="disabled"><a href="@Url.Action("GetAll", new { page = i })">@i</a></li>
+                    }
+                }
+                @if (Model.PageIndex < Model.TotalPages)
+                {
+                    <li><a href="@Url.Action("GetAll", new { page = Model.PageIndex + 1 })" title="Sonrakı səhifə"><i class="fa fa-angle-right"></i></a></li>
+                    <li><a href="@Url.Action("GetAll", new { page = Model.TotalPages })" title="Son səhifə"><i class="fa fa-angle-double-right"></i></a></li>
+                }
+                else
+                {
+                    <li class="disabled"><a href="@Url.Action("GetAll", new { page = Model.PageIndex })" title="Sonrakı səhifə"><i class="fa fa-angle-right"></i></a></li>
+                    <li class="disabled"><a href="@Url.Action("GetAll", new { page = Model.TotalPages })" title="Son səhifə"><i class="fa fa-angle-double-right"></i></a></li>
+                }
+            </ul>
+        </div>
+    }
+
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">No</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Number</th>
+                    <th scope="col">Logo url</th>
+                    <th scope="col">Classes</th>
+                    <th scope="col">Status 1</th>
+                    <th scope="col">Status 2</th>
+                    <th scope="col">Details page url</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var data in Model)
+                {
+                    <tr>
+                        <td>@data.No</td>
+                        <td scope="col">@Html.Raw(@data.TradeMark)</td>
+                        <td scope="col">@Html.Raw(@data.Number)</td>
+                        <td scope="col">@data.LogoUrl</td>
+                        <td scope="col">@Html.Raw(data.Classes)</td>
+                        <td scope="col">@Html.Raw(data.Status1)</td>
+                        <td scope="col">@Html.Raw(data.Status2)</td>
+                        <td scope="col">@data.DetailsPageUrl</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}

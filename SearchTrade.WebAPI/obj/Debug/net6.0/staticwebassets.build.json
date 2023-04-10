@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "YOqXTWWEpN59bKnyYo86ICfbjJwIASurXYBouK1pxgI=",
+  "Source": "SearchTrade.WebAPI",
+  "BasePath": "_content/SearchTrade.WebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
