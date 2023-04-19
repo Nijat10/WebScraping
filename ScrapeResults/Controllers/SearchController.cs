@@ -31,7 +31,7 @@ namespace ScrapeResults.Controllers
                 //I have send static value to "S" parameter. This parameter is value of text which we are searching for.
                 //But in this website changes value of my text and sends that parameter 
 
-                //For example ,
+                //For example , (encrypt)
                 // 86e4a92e-62e6-4715-a925-1cea2105e0ad  = 'abc'
 
 

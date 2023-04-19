@@ -29,10 +29,10 @@ namespace SearchTrade.WebAPI.Controllers
                 //I have send static value to "S" parameter. This parameter is value of text which we are searching for.
                 //But in this website changes value of my text and sends that parameter 
 
-                //For example ,
+                //For example , (encrypt)
                 // 86e4a92e-62e6-4715-a925-1cea2105e0ad  = 'abc'
 
-                string defaultWord = "86e4a92e-62e6-4715-a925-1cea2105e0ad"; //abc
+                string defaultWord = "999290da-13aa-41d8-93dc-4c2f0da9b9cf"; //abc
 
                 var url = $"https://search.ipaustralia.gov.au/trademarks/search/result?s={defaultWord}";
 
