@@ -9273,11 +9273,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Music\\WebScrapingApplication\\ScrapeResults\\ScrapeResults.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Source\\Repos\\WebScraping\\ScrapeResults\\ScrapeResults.csproj",
       "projectName": "ScrapeResults",
-      "projectPath": "C:\\Users\\User\\Music\\WebScrapingApplication\\ScrapeResults\\ScrapeResults.csproj",
+      "projectPath": "C:\\Users\\User\\Source\\Repos\\WebScraping\\ScrapeResults\\ScrapeResults.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Music\\WebScrapingApplication\\ScrapeResults\\obj\\",
+      "outputPath": "C:\\Users\\User\\Source\\Repos\\WebScraping\\ScrapeResults\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -517,11 +517,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Music\\WebScrapingApplication\\SearchTrade.WebAPI\\SearchTrade.WebAPI.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Source\\Repos\\WebScraping\\SearchTrade.WebAPI\\SearchTrade.WebAPI.csproj",
       "projectName": "SearchTrade.WebAPI",
-      "projectPath": "C:\\Users\\User\\Music\\WebScrapingApplication\\SearchTrade.WebAPI\\SearchTrade.WebAPI.csproj",
+      "projectPath": "C:\\Users\\User\\Source\\Repos\\WebScraping\\SearchTrade.WebAPI\\SearchTrade.WebAPI.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Music\\WebScrapingApplication\\SearchTrade.WebAPI\\obj\\",
+      "outputPath": "C:\\Users\\User\\Source\\Repos\\WebScraping\\SearchTrade.WebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

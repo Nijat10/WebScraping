@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0kMid4yOHfJRlUt0PbA2bE26SQpvxYShqVNtSwfjZq0FIx0+5OdBODj5rLUuCK9d4PFyg8EN48Hs0aa44K3XSA==",
+  "dgSpecHash": "tNP9qkN9BxE7oZWQ6V79gHO7IdaonSn/5iplSUdsuNBicfGHn8351M6//yuQzveFZChUWcYkmeCJWnDJtf5VXw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\User\\Music\\WebScrapingApplication\\SearchTrade.WebAPI\\SearchTrade.WebAPI.csproj",
+  "projectFilePath": "C:\\Users\\User\\Source\\Repos\\WebScraping\\SearchTrade.WebAPI\\SearchTrade.WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\htmlagilitypack\\1.11.46\\htmlagilitypack.1.11.46.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
